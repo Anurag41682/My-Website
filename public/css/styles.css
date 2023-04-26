@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&family=Oswald:wght@200&family=Roboto:wght@900&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&family=Oswald:wght@200&family=Roboto:wght@900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
 * {
 	margin: 0;
 	padding: 0;
+	font-family: "Rajdhani", sans-serif;
 }
 
 body {
@@ -24,12 +25,18 @@ body {
 
 .navbar a {
 	text-decoration: none;
-	color: #0f3d0f;
+	color: #0e5200;
 	font-size: 1.5rem;
+	border-radius: 5px;
+	padding: 0.5rem;
+	font-weight: 700;
 }
 
 .navbar a:hover {
-	color: #adebad;
+	background-color: #b5edb5;
+	color: #007900;
+	transition-duration: 167ms;
+	box-shadow: 2px 1px 1px #093300;
 }
 
 .navbar .img img {
@@ -45,28 +52,29 @@ body {
 	top: 0;
 	width: 100%;
 	display: flex;
-	background-color: #28a428;
+	background-color: #b5edb580;
 	align-items: center;
 	justify-content: space-between;
+	backdrop-filter: blur(7px);
 }
 
 p {
-	font-family: "Lato", sans-serif;
+	/* font-family: "Lato", sans-serif; */
 	margin: 35px 0px;
 	line-height: 55px;
 	font-size: 2rem;
-	font-style: oblique;
+	/* font-style: oblique; */
 	color: #505050;
 }
 
 #content h1 {
-	font-family: "Roboto", sans-serif;
+	/* font-family: "Roboto", sans-serif; */
 	color: #505050;
 	padding-top: 8rem;
 }
 
 p.intro {
-	font-family: "Oswald", sans-serif;
+	/* font-family: "Oswald", sans-serif; */
 	font-size: 3rem;
 	font-style: oblique;
 	color: #505050;
@@ -95,16 +103,17 @@ div.cont {
 	justify-content: space-around;
 	width: 100%;
 	height: 125px;
-	background-color: #28a428;
+	background-color: #b5edb5;
 	align-items: center;
 }
 
 div.cont i {
-	color: #0f3d0f;
+	color: #0e5200;
+	padding: 0.2rem;
 }
 
 div.cont i:hover {
-	color: #adebad;
+	color: #00b100;
 }
 
 div#skills {
@@ -117,6 +126,13 @@ div#projects a {
 	color: #505050;
 	text-decoration: none;
 	font-size: 20px;
+	padding: 0.2rem;
+	border-radius: 5px;
+	font-weight: 700;
+}
+div#projects a:hover {
+	background-color: #b5edb5;
+	color: #005200;
 }
 
 div#projects .pr1,
@@ -134,12 +150,17 @@ div#projects .pr4 {
 		position: fixed;
 		top: 0%;
 	}
-
+	.navbar a {
+		padding: 0.2rem;
+	}
 	div.menu {
-		display: block;
+		display: flex;
+		flex-direction: column;
 		position: absolute;
-		right: 32px;
-		top: 38px;
+		right: 20px;
+		top: 28px;
+		padding: 0.5rem;
+		padding-bottom: 0.06rem;
 	}
 
 	.menu-lines {
@@ -148,7 +169,12 @@ div#projects .pr4 {
 		height: 2px;
 		background-color: #0f3d0f;
 	}
-
+	.menu:hover {
+		background-color: #b5edb5;
+		border-radius: 5px;
+		box-shadow: 2px 1px 1px #093300;
+		transition-delay: 100ms;
+	}
 	.navbar ul {
 		width: 86%;
 		list-style-type: none;
@@ -179,6 +205,6 @@ div#projects .pr4 {
 	#skills,
 	#projects,
 	#contact {
-		scroll-margin-top: 21rem;
+		scroll-margin-top: 23rem;
 	}
 }
